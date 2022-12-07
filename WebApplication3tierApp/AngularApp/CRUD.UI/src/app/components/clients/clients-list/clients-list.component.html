@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">Clients</h1>
+    <!-- <p><a [routerLink]="['add']">Add New Client</a></p> -->
+    <p><button type="button" class="btn btn-primary" [routerLink]="['add']" >Add New Client</button></p>
+
+    <table class="table" *ngIf="clients && clients.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <!-- <th>Salary</th> -->
+                <th>Behaviour</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of clients">
+                <td>{{ client.id }}</td>
+                <td>{{ client.name }}</td>
+                <td>{{ client.email }}</td>
+                <td>{{ client.phone }}</td>
+                <!-- <td>{{ client.salary }}</td> -->
+                <td>{{ client.behaviour }}</td>
+                
+                <td><a [routerLink]="['/clients', 'edit', client.id ]">Edit</a></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!clients || clients.length <= 0">No Clients Found.</p>
+</div>

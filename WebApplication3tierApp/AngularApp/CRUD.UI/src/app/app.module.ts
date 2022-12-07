@@ -24,6 +24,9 @@ import { HomeComponent } from './components/home/home.component';
 import { PractitionersListComponent } from './components/practitioners/practitioners-list/practitioners-list.component';
 import { AddPractitionerComponent } from './components/practitioners/add-practitioner/add-practitioner.component';
 import { EditPractitionerComponent } from './components/practitioners/edit-practitioner/edit-practitioner.component';
+import { ClientsListComponent } from './components/clients/clients-list/clients-list.component';
+import { AddClientComponent } from './components/clients/add-client/add-client.component';
+import { EditClientComponent } from './components/clients/edit-client/edit-client.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { EditPractitionerComponent } from './components/practitioners/edit-pract
     PractitionersListComponent,
     AddPractitionerComponent,
     EditPractitionerComponent,
+    ClientsListComponent,
+    AddClientComponent,
+    EditClientComponent,
     StudentsListComponent,
     AddStudentComponent,
     EditStudentComponent,
