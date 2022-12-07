@@ -59,7 +59,19 @@ namespace _1CommonInfrastructure.Enums
         PractitionerUpdate,
 
         [ActionGroupDescription("Practitioner", "Delete")]
-        PractitionerDelete, 
+        PractitionerDelete,
+
+        [ActionGroupDescription("Client", "View")]
+        ClientView,
+
+        [ActionGroupDescription("Client", "Create")]
+        ClientCreate,
+
+        [ActionGroupDescription("Client", "Update")]
+        ClientUpdate,
+
+        [ActionGroupDescription("Client", "Delete")]
+        ClientDelete, 
 
         [ActionGroupDescription("Subject", "View")]
         SubjectView,

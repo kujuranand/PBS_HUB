@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2DataAccessLayer.Context.Models
+namespace _1CommonInfrastructure.Models
 {
-    public class Client  
+    public class ClientModel  
     {
         public int Id { get; set; } // int
         public string Name { get; set; } // nvarchar(400)
@@ -16,5 +17,7 @@ namespace _2DataAccessLayer.Context.Models
         public long Phone { get; set; }
 
         public string Behaviour { get; set; } 
+
     }
+
 }
