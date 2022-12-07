@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">Practitioners</h1>
+    <!-- <p><a [routerLink]="['add']">Add New Practitioner</a></p> -->
+    <p><button type="button" class="btn btn-primary" [routerLink]="['add']" >Add New Practitioner</button></p>
+
+    <table class="table" *ngIf="practitioners && practitioners.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <!-- <th>Salary</th> -->
+                <th>Department</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let practitioner of practitioners">
+                <td>{{ practitioner.id }}</td>
+                <td>{{ practitioner.name }}</td>
+                <td>{{ practitioner.email }}</td>
+                <td>{{ practitioner.phone }}</td>
+                <!-- <td>{{ practitioner.salary }}</td> -->
+                <td>{{ practitioner.department }}</td>
+                
+                <td><a [routerLink]="['/practitioners', 'edit', practitioner.id ]">Edit</a></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!practitioners || practitioners.length <= 0">No Practitioners Found.</p>
+</div>
