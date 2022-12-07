@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { PractitionersListComponent } from './components/practitioners/practitioners-list/practitioners-list.component';
 import { AddPractitionerComponent } from './components/practitioners/add-practitioner/add-practitioner.component';
@@ -12,6 +12,8 @@ import { EditPractitionerComponent } from './components/practitioners/edit-pract
 import { ClientsListComponent } from './components/clients/clients-list/clients-list.component';
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
 import { EditClientComponent } from './components/clients/edit-client/edit-client.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import { EditClientComponent } from './components/clients/edit-client/edit-clien
     ClientsListComponent,
     AddClientComponent,
     EditClientComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

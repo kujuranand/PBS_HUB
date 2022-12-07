@@ -9,12 +9,22 @@ import { EditPractitionerComponent } from './components/practitioners/edit-pract
 import { ClientsListComponent } from './components/clients/clients-list/clients-list.component';
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
 import { EditClientComponent } from './components/clients/edit-client/edit-client.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'login/register',
+    component: RegisterComponent
   },
   {
     path: 'practitioners',
