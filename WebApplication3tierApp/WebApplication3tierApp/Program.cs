@@ -15,14 +15,14 @@ using FluentValidation;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers((options) =>
-{
-    options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer()));
-})
-    //  .AddNewtonsoftJson(options => options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc)
-    //  .AddNewtonsoftJson(options => options.SerializerSettings.Converters.Add(new DateTimeConverter()))
-    .AddJsonOptions(opts => opts.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
-    .AddFluentValidation(fluent => fluent.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+//builder.Services.AddControllers((options) =>
+//{
+//    options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer()));
+//})
+//    //  .AddNewtonsoftJson(options => options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc)
+//    //  .AddNewtonsoftJson(options => options.SerializerSettings.Converters.Add(new DateTimeConverter()))
+//    .AddJsonOptions(opts => opts.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
+//    .AddFluentValidation(fluent => fluent.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
 
 var projectDevelopmentCorsOptions = "_projectDevelopmentCorsOptions";
 var cnn = builder.Configuration.GetConnectionString("DefaultConnection");

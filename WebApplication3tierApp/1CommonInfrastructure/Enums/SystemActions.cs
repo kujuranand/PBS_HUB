@@ -49,6 +49,18 @@ namespace _1CommonInfrastructure.Enums
         [ActionGroupDescription("Employee", "Delete")]
         EmployeeDelete,
 
+        [ActionGroupDescription("Practitioner", "View")]
+        PractitionerView,
+
+        [ActionGroupDescription("Practitioner", "Create")]
+        PractitionerCreate,
+
+        [ActionGroupDescription("Practitioner", "Update")]
+        PractitionerUpdate,
+
+        [ActionGroupDescription("Practitioner", "Delete")]
+        PractitionerDelete, 
+
         [ActionGroupDescription("Subject", "View")]
         SubjectView,
 

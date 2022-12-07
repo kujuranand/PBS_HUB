@@ -22,6 +22,7 @@ namespace _2DataAccessLayer.Ioc
             services.AddScoped<IStudentDal, StudentDal>();
             services.AddScoped<ISubjectDal, SubjectDal>();
             services.AddScoped<IEmployeeDal, EmployeeDal>();
+            services.AddScoped<IPractitionerDal, PractitionerDal>();
             services.AddScoped<ICourseDal, CourseDal>();
             services.AddScoped<ILecturerDal, LecturerDal>();
             services.AddScoped<IUnitDal, UnitDal>();
