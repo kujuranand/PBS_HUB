@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Student } from 'app/models/student.model';
 import { StudentsService } from 'app/services/students.service';
-import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -20,7 +19,7 @@ export class AddStudentComponent implements OnInit {
     course: ''
   };
 
-  constructor(private studentService: StudentsService, private router: Router, private toastr: ToastrService) { }
+  constructor(private studentService: StudentsService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -30,7 +29,6 @@ export class AddStudentComponent implements OnInit {
     .subscribe({
       next: (student) => {
         this.router.navigate(['students']);
-        this.toastr.success("You added Student Successfully");
       }
     });
   }

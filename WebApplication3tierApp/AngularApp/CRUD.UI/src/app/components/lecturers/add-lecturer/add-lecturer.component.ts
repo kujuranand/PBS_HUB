@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Lecturer } from 'app/models/lecturer.model';
 import { LecturersService } from 'app/services/lecturers.service';
-import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -29,7 +28,6 @@ export class AddLecturerComponent implements OnInit {
     .subscribe({
       next: (lecturer) => {
         this.router.navigate(['lecturers']);
-        
       }
     });
   }

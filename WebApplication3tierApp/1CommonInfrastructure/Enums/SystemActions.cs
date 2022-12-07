@@ -59,19 +59,7 @@ namespace _1CommonInfrastructure.Enums
         SubjectUpdate,
 
         [ActionGroupDescription("Subject", "Delete")]
-        SubjectDelete,
-
-        [ActionGroupDescription("Lecturer", "View")]
-        LecturerView,
-
-        [ActionGroupDescription("Lecturer", "Create")]
-        LecturerCreate,
-
-        [ActionGroupDescription("Lecturer", "Update")]
-        LecturerUpdate,
-
-        [ActionGroupDescription("Lecturer", "Delete")]
-        LecturerDelete
+        SubjectDelete
     }
 }
 
